@@ -21,4 +21,4 @@ jobs:
       - name: Run the Maven verify phase
         run: mvn --batch-mode --update-snapshots verify
       - name: Run testHeroes
-        run: src test java org.antonio TestHeroes
+        run: mvn test -Dtest=org.antonio.TestHeroes
